@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;900&family=Roboto:wght@100;300;500;900&display=swap');
+/* Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* selector de etiqueta */
+body{
+    background-color: #deb887; font-family:´Roboto´, sans-serif;
+}
+a{
+    margin-left : 30px;
+    color: #ffa500;
+}
+#option_one,#option_two{
+    color: #9acd32;
+}
+/* selector por clase */
+.group_options{
+    background-color: rgb(241, 89, 28);
+    margin-top: 5px;
+}
+.group_class{
+    padding: 10px;
+}
+/* Selector de pseudoclases */
+.group_options:hover{
+    background-color: yellow;
+    color: orange;
+}
+/* selector por atributo */
+[disabled]{
+    background-color: red;
+}
+/* selectores descendentes */
+#papa{
+    border: 10px double red;
+    border-radius: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 20px;
+    box-shadow: 0px 20px 10px;
+}
+ /* el papa */
+#papa > #etiqueta > a{
+    color: #ff000098;
+}
+#btn_send{
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 900;
+
+}  
+ /* Box modle */
+#title_box{
+color: brown;
+font-family: 'Times New Roman', Times, serif;
+background-color: aqua;
+text-align: center;
+/* margin-top: 20px; */
+/* margin-bottom: 20px; */
+margin: 20px 0;
+/* solid,double,dotted,dashed,groove,ridge */
+border: 1px double #000;
+border-radius: 10px;
+/* padding-top,bottom */
+padding: 30px;
+/* x,y,radio de sombra,radio de propagacion */
+box-shadow: 0px 0px 10px 1px #b80505;
+/* esto es copiado de una pagina generador de sombras */
+box-shadow: -11px 7px 15px 0px #eb1212;
+-webkit-box-shadow: -11px 7px 15px 0px rgba(235,18,18,1);
+-moz-box-shadow: -11px 7px 15px 0px rgba(235,18,18,1);
+font-size: 40px;
+/* espacio entre letras */
+letter-spacing: 5px;
+/* espacio entre palabras */
+word-spacing: 5px;
+/* Transforma la letra ¿?*/
+text-transform:lowercase;
+}
+#box_father{
+    /* ancho */
+    width: 200px;
+    /* alto */
+    height: 200px;
+    background-color: #000;
+    background-image: url(https://i.blogs.es/37561e/superpc-1/450_1000.jpeg);
+    /* se acomoda al tamaño que esta ahi */
+    background-size: cover;
+    /* coloca el centro de la imagen */
+    background-position: center;
+    /* puede repetir la imagen en eje x,y */
+    background-repeat: no-repeat;
+}
+/* #box_model{ */
+    /* width: 50%; */
+    /* height: 50%; */
+    /* background-color: #ffa500; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+/* } */
+
+/* media querys */
+@media (min-width: 800px) and (max-width:1200px){
+    body{
+        background-color: #eb1212;
+    }
+    h1{
+        text-align: center;
+        color: #9acd32;
+    }
+}
+@media (max-width:799px){
+    body{
+        background-image: url(https://i.blogs.es/37561e/superpc-1/450_1000.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
